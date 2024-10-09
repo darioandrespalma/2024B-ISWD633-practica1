@@ -31,6 +31,7 @@ docker pull hello-world
 ![Imagen](img/docker_hello.png)
 
 **¿Qué es nginx**
+
 Nginx es un servidor web y proxy inverso de alto rendimiento. Es conocido por su capacidad para manejar múltiples conexiones simultáneas con un uso eficiente de recursos, y es ampliamente utilizado en servidores web para balanceo de carga, caching y como proxy inverso.
 
 # COMPLETAR 
