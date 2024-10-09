@@ -12,5 +12,4 @@ Despues de realizar la práctica, logré fortalecer varios conocimientos clave q
 * Entendí mejor como funciona GitHub.
 * Mejor conocimiento de contenedores de Docker, es decir como crear y gestionar contenedores Docker utilizando imagenes específicas.
 * También entendí la ejecución de contenedores en modo interactivo y en segundo plano.
-* Con respecto al mapeo de puertos, ya tenia un poco de conocimiento por la Materia de Tecnologias de la Información.
-* 
+* Con respecto al mapeo de puertos, ya tenia un poco de conocimiento por la Materia de Tecnologias de la Información. 
