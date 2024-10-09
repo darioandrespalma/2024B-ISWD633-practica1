@@ -11,7 +11,7 @@ Es un archivo unico que contiene todos los programas, librerias, dependecias y c
 
 ### Contenedor
 Es una instancia que se crea  a partir de una imagen. Los contenedores permiten ejecutar aplicaciones en entornos aislados, asegurando que funcionen de manera consistente sin importar en que sistema se desplieguen. 
-# COMPLETAR 
+
 
 ![Imagen y contenedores](img/imagenContenedores.JPG)
 ## Comandos para imágenes
@@ -35,18 +35,22 @@ Descargar la imagen **hello-world**
 docker pull hello-world
 ```
 
+![Imagen](img/docker_pull_hello_world.png)
+
+
 ![Imagen](img/docker_hello.png)
 
 **¿Qué es nginx**
 
 Nginx es un servidor web y proxy inverso de alto rendimiento. Es conocido por su capacidad para manejar múltiples conexiones simultáneas con un uso eficiente de recursos, y es ampliamente utilizado en servidores web para balanceo de carga, caching y como proxy inverso.
 
-# COMPLETAR 
-
 Descargar la imagen  **nginx** en la versión **alpine**
 ```
 docker pull nginx:alpine
 ```
+
+![Imagen](img/docker_pull_hello_world.png)
+
 
 # COMPLETAR
 
