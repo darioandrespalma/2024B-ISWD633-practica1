@@ -24,13 +24,22 @@ docker pull <nombre imagen>:<tag>
 ```
 
 Descargar la imagen **hello-world**
-# COMPLETAR
+```
+docker pull hello-world
+```
+
 ![Imagen](img/docker_hello.png)
 
 **¿Qué es nginx**
+Nginx es un servidor web y proxy inverso de alto rendimiento. Es conocido por su capacidad para manejar múltiples conexiones simultáneas con un uso eficiente de recursos, y es ampliamente utilizado en servidores web para balanceo de carga, caching y como proxy inverso.
+
 # COMPLETAR 
 
 Descargar la imagen  **nginx** en la versión **alpine**
+```
+docker pull nginx:alpine
+```
+
 # COMPLETAR
 
 ### Listar imágenes
