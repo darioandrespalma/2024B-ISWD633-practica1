@@ -4,6 +4,13 @@ Es un archivo único que contiene todos los programas, librerías, dependencias 
 
 
 ## ¿Cuál es la relación entre una imagen y un contenedor? 
+
+En Docker una imagen se utliza para crear contenedores. 
+### Imagen 
+Es un archivo unico que contiene todos los programas, librerias, dependecias y configuraciones necesarias para instalar o ejecutar una aplicacion para funcionar correctamente.
+
+### Contenedor
+Es una instancia que se crea  a partir de una imagen. Los contenedores permiten ejecutar aplicaciones en entornos aislados, asegurando que funcionen de manera consistente sin importar en que sistema se desplieguen. 
 # COMPLETAR 
 
 ![Imagen y contenedores](img/imagenContenedores.JPG)
