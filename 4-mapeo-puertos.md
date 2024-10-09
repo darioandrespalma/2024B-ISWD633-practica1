@@ -11,9 +11,31 @@ docker run -d --name <nombre contenedor> -p <puerto host>:<puerto contenedor> <n
 
 ```
 Crear un contenedor a partir de la imagen nginx version alpine con el mapeo de puertos del ejemplo gráfico, host 3000 y contenedor 80
-# COMPLETAR
 
-# COLOCAR UNA CAPTURA DE PANTALLA  DEL ACCESO http://localhost:3000
+* Primero, vamos a crear un contenedor a partir de la imagen nginx:alpine, mapeando el puerto 3000 del host al puerto 80 del contenedor.
+* El puerto 80 es el servidor web Nginx que está escuchando dentro del contenedor, y queremos que sea accesible desde el puerto 3000 en la máquina host.
+
+```
+docker run -d --name srv-web-nginx -p 3000:80 nginx:alpine
+
+```
+
+![mapeo](img/CrearMapeo.png)
+
+Una vez ejecutado, Docker lanzará el contenedor en segundo plano.
+
+VERIFICAR 
+
+```
+docker ps
+
+```
+
+![mapeo](img/VerificarMapeo.png)
+
+ACCESO http://localhost:3000
+
+![mapeo](img/Pagina3000.png)
 
 ### Para mapear más de un puerto
 
@@ -22,5 +44,30 @@ docker run -d --name <nombre contenedor> -p <puerto host 01>:<puerto contenedor 
 ```
 
 Crear un contenedor a partir de la imagen rabbitmq version management-alpine, para este mapeo de puertos usar en el host los mismos puertos del contenedor.
-# COMPLETAR
+
+* RabbitMQ en la versión management requiere varios puertos para su funcionamiento, incluidos el puerto del protocolo AMQP (generalmente el 5672) y el puerto del panel de administración web (15672).
+
+```
+docker run -d --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:management-alpine
+```
+
+![mapeo](img/CrearMultiplesMapeo.png)
+
+VERIFICAR 
+
+```
+docker ps
+
+```
+
+![mapeo](img/VerificarCreacionMapeo.png)
+
+ACCESO http://localhost:15672
+
+![mapeo](img/Navegador15672.png)
+
+
+
+
+
 
