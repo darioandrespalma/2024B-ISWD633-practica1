@@ -31,7 +31,7 @@ docker ps
 
 ```
 
-![mapeo](img/VerificarMapeo.png)
+![mapeo](img/VeerificarMapeo.png)
 
 ACCESO http://localhost:3000
 
