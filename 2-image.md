@@ -49,10 +49,8 @@ Descargar la imagen  **nginx** en la versión **alpine**
 docker pull nginx:alpine
 ```
 
-![Imagen](img/docker_pull_hello_world.png)
+![Imagen](img/docker_nginx.png)
 
-
-# COMPLETAR
 
 ### Listar imágenes
 
@@ -60,7 +58,8 @@ docker pull nginx:alpine
 docker images
 ```
 
-# COLOCAR UNA CAPTURA DE PANTALLA DEL RESULTADO 
+![Imagen](img/ListarImagenes.png)
+
 
 **Identificadores**
 
@@ -75,17 +74,35 @@ docker inspect <nombre imagen>:<tag>
 ```
 
 Inspeccionar la imagen hello-world 
-# COMPLETAR
+
+```
+docker inspect hello-world
+```
+
+![Imagen](img/inspeccionar1.png)
+
+![Imagen](img/inspeccionar2.png)
+
 
 **¿Con qué algoritmo se está generando el ID de la imagen**
-# COMPLETAR
+El ID de la imagen es generado usando el algoritmo de hash SHA-256.
 
 ### Filtrar imágenes
 
-```
-docker images | grep <termino a buscar>
+Si tenemos muchas imagenes descargadas y quieren buscar una especifica, usamos este comando:
+
 
 ```
+docker images | grep <termino a buscar>
+```
+
+Por ejemplo, si quieren buscar la imagen nginx, utilizamos este comando:
+```
+docker images | grep nginx
+```
+
+![Imagen](img/Filtrar.png)
+
 
 ### Para eliminar una imagen
 Eliminar permanentemente la imagen de tu sistema Docker.
@@ -95,7 +112,13 @@ docker rmi <nombre imagen>:<tag>
 ```
 
 Eliminar la imagen hello-world 
-# COMPLETAR
+
+```
+docker rmi hello-world
+```
+
+![Imagen](img/Eliminar1.png)
+
 
 -f: Es la opción para forzar la eliminación de la imagen incluso si hay contenedores en ejecución que utilizan esa imagen.
 Cuando eliminas una imagen Docker, Docker no elimina automáticamente los contenedores que se han creado a partir de esa imagen. Esto significa que, aunque hayas eliminado la imagen, el contenedor seguirá ejecutándose normalmente.  
