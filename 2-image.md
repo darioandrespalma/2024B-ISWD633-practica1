@@ -54,6 +54,8 @@ docker pull nginx:alpine
 
 ### Listar imágenes
 
+Listar imagenes es el proceso de ver todas las imágenes que están almacenadas localmente en tu sistema Docker.
+
 ```
 docker images
 ```
